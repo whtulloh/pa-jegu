@@ -1,0 +1,829 @@
+/*
+*New Header
+*Template header for cocobeanbags.com   
+
+*/
+/* Import Bootstrap styles and Responsive styles */
+@import url('bootstrap.css');
+@import url('bootstrap-responsive.css');
+::selection{ background-color: rgb(0,124,195); color: white; }
+::-moz-selection{ background-color: rgb(0,124,195); color: white; }
+::webkit-selection{ background-color: rgb(0,124,195); color: white; }
+    
+body {
+    padding-bottom: 40px;
+    padding-top: 60px;
+    background-color: #fff;
+}
+
+a:focus{
+    outline: none;
+}
+
+.product{
+    padding: 5px 5px 10px 5px;
+}
+
+    .product:hover{
+        cursor: pointer;
+        background-color: rgb(0,124,195);
+    }
+    
+.container-fluid{
+    margin-top: 80px;
+}
+
+.container .span10{
+    margin-left: 0;
+}
+
+.container a p{
+    display: inline;
+}
+.span3 ul,
+.span3 ul li{
+    list-style-type: none;
+    margin-left: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.span10{
+    background: white;
+}
+
+.span8{
+    padding-top: 15px;
+}
+
+
+footer{
+    text-align: center;
+}
+
+.input-append input.btn{
+    height: 30px;
+}
+
+/*Batas CSS lama dan Baru*/
+.navbar-inner {
+    height: 60px;
+    background-color: rgb(0,124,195);
+    background-image: -moz-linear-gradient(top,  rgb(0,124,195), rgb(0,124,195));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,  rgb(0,124,195), rgb(0,124,195));
+  background-image: -webkit-linear-gradient(top,  rgb(0,124,195), rgb(0,124,195));
+  background-image: -o-linear-gradient(top,  rgb(0,124,195), rgb(0,124,195));
+  background-image: linear-gradient(to bottom, rgb(0,124,195), rgb(0,124,195));
+    border-bottom: none;
+    }
+
+.navbar-inner .btn-navbar{
+    margin: 20px 3% auto auto;
+}
+
+.navbar .nav.pull-left{
+  float: left;
+  margin: 17px 0 0 15%;
+}
+
+.navbar .nav.pull-right{
+  float: right;
+  margin: 17px 15% 0 0;
+}
+
+.navbar .nav > li{
+    margin-right: 10px;
+    margin-top: 0px;
+    height: 10px;
+    line-height: 10px;
+    width:auto;
+    text-align: center;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus{
+    color: rgb(0,124,195);
+    text-shadow: none;
+    border-radius: 6px 6px 6px 6px;
+    background-color: white;
+}
+
+.navbar .nav > li > a{
+  text-shadow:none;
+}
+
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open > .dropdown-toggle{
+    background-color: transparent;
+    color: white;
+    text-shadow: none;
+    border-radius: 6px 6px 6px 6px; 
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    color: rgb(0,124,195);
+    border-radius: 6px 6px 6px 6px;
+    text-shadow: none;
+    background-color: white;
+    height: 10px;
+}
+
+
+    .nav-collapse ul.nav li a{
+        color:white;
+    }
+
+.hair-atas{
+    margin-top: 30px;
+    display: none;
+}
+
+.hair-white{
+    border-top: 2px dashed #eeeeee;
+}
+
+.hair-bawah{
+    margin: 50px 0 0 0;
+}
+
+.logo{
+    background-image: url("../img/notFix/logo_cocobeanbags_2.png");
+    position: absolute;
+    margin-left: 45%;
+    margin-right: auto;
+}
+
+.logo:hover > img{
+  opacity: 0.5;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  box-shadow: 0px 0px 0px;
+}
+
+/*Dropdown*/
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color: rgb(0,124,195);
+    background-color: white;
+}
+
+
+.dropdown-menu{
+  margin: 32px 0 0 0;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+  margin-top: 4px;
+}
+
+.navbar .nav li#login > .dropdown-toggle .caret{
+  margin-top: 7px;
+}
+
+.navbar .nav li.dropdown:hover > .dropdown-toggle .caret,
+.nav .dropdown-toggle:hover .caret,
+.navbar .nav li.dropdown:focus > .dropdown-toggle .caret {
+  border-top-color: rgb(119, 119, 119);
+  border-bottom-color: rgb(119, 119, 119);
+}
+
+#login .dropdown-menu:focus, .dropdown-menu li >input:focus{
+  display: block !important;
+  cursor: pointer;
+}
+
+.dropdown-menu li > input{
+  margin: 0px 5px;
+}
+
+.dropdown-menu li label{
+  text-align: left;
+  margin: 5px 0 5px 10px;
+}
+
+.dropdown-menu li.inline{
+  display: inline;
+}
+
+.dropdown-menu li input.btn{
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+a#forgot{
+  color: rgb(0,124,195);
+}
+
+.dropdown-menu li > a#forgot:hover, .dropdown-menu li > a#forgot:focus{
+  background-color: white;
+  text-align: left;
+  color: rgb(0, 85, 128);
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+  background-image: linear-gradient(to bottom, white, white);
+}
+
+.nav-collapse ul.nav li.dropdown ul.logged li a{
+  color: rgb(0, 85, 128);
+  text-align: left;
+} 
+
+.nav-collapse ul.nav li.dropdown ul.logged li > a:hover{
+  background-image: linear-gradient(to bottom, rgb(0,124,195), rgb(0,124,195));
+  color: white;
+}
+
+.dropdown-menu a#forgot {
+  padding: 7px 10px 0 10px;
+}
+
+#cart .dropdown-menu > li{
+  float: none;
+}
+
+#cart i,#login i{
+  margin-top: 0px;
+  margin-bottom: -4px;
+}
+
+.dropdown-toggle > .active:focus, {
+  border-radius: 5px 5px 0 0;
+}
+
+
+#login b{
+  margin-right: 5px;
+}
+
+#login > a {
+  padding: 6px 10px 10px 10px;
+  margin-top: 3px;
+}
+
+#cart,#login{
+  margin-top: -2px;
+}
+
+#infoMessage{
+  color: red;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #eddbe3;
+  border-color: #e8d1df;
+  color: #bd4247;
+  border-radius: 5px 5px 5px 5px;
+  width: 95%;
+  float: none;
+  margin: 0 5px;
+  padding: 7px 0;
+}
+
+.span9{
+  background-color: white;
+}
+
+#login-logo{
+  position: absolute;
+  margin-left: 25%;
+}
+
+.login.container{
+  margin-top: 1%;
+}
+
+.login .span9 .span5{
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  padding: 5px;
+}
+
+.login .span9 .span5 input[type="text"],
+.login .span9 .span5 input[type="password"],
+.login .span9 .span5 label,
+.login .span9 .span5 a{
+  width: 90%;
+  margin: 5px 10px;
+}
+
+.login .span9 .span5{
+  margin-top: 50px;
+}
+
+.login .span9 .span5 p{
+  margin-left: 5px;
+}
+
+.login .span9 .span5 .btn{
+  margin-right: 7%;
+  margin-bottom: 10px;
+}
+
+.alert {
+  margin-bottom: 10px;
+}
+
+input.qty{
+  width: 20px;
+}
+
+@media (min-width: 1280px){
+  .container{
+    width: 1020px;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 1024px){
+
+  .container{
+        width: 820px;
+    }
+
+.navbar .nav.pull-left{
+  margin: 18px auto 0px 10.5%;
+  float: left;
+}
+
+.navbar .nav.pull-right{
+  margin: 18px 10.5% auto auto;
+  float: right;
+}
+}
+
+@media (max-width: 1024px) and (min-width: 979px){
+    .container{
+        width: 820px;
+    }
+
+  .navbar .nav.pull-left{
+    margin: 18px auto 0px 10%;
+    float: left;
+  }
+
+  .navbar .nav.pull-right{
+    margin: 18px 10% auto auto;
+    float: right;
+  }
+}
+
+@media (max-width: 979px) and (min-width: 768px){
+    .container{
+        width: 640px;
+    }
+
+    .logo{
+        position: absolute;
+    }
+
+    .hair-atas{
+        margin-top: 55px;
+        display: block;
+    }
+
+    .hair-bawah{
+        margin: -2px 0 5px 0;
+    }
+
+    .navbar-inner{
+        height: auto;
+    }
+
+    .nav-collapse ul.nav.pull-left{
+    float: none;
+    margin: 50px 0px 10px;
+    }
+
+  .nav-collapse ul.nav.pull-right{
+    float: none;
+    margin: 0px 0px 10px;
+  }
+
+    .dropdown-menu li > input.btn{
+      margin: 0px 3% 20px auto;
+    }
+
+    .navbar .nav {
+        margin: 18px auto 30px 0;
+    }
+
+    .navbar .nav > li,.navbar .nav > li > a:hover, .navbar .nav > .active > a, .navbar .nav > .active > li:hover{
+        border-radius: 5px 5px 5px 5px;
+        line-height: 10px;
+        margin:10px 1px 20px 0px;
+        width: auto;
+        text-align: left;
+    }
+
+    .navbar .nav > li > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+        color: rgb(85, 85, 85);
+        text-decoration: none;
+        height: 10px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+        font-weight: normal;
+    }
+
+  #login .dropdown-toggle:hover,
+  #login .dropdown-toggle:focus,
+  .navbar .nav li.dropdown.open > .dropdown-toggle,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+
+  li input{
+    width: 95%;
+    padding-right: 10px;
+  }
+
+  #login .dropdown-menu li > label{
+    color: white;
+  }
+
+  a#forgot,
+  .dropdown-menu li > a#forgot:hover,
+  .dropdown-menu li > a#forgot:focus{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+  }
+
+  .navbar .nav li.dropdown:hover > .dropdown-toggle .caret{
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+
+  .navbar .nav > li > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    height: 10px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .container{
+        width: 100%;
+    }
+    
+    .hero-unit {
+        padding: 20px;
+    }
+
+    .logo{
+        position: absolute;
+        margin-left: 37%;
+        margin-right: auto;
+    }
+
+    .hair-atas{
+        margin-top: 55px;
+        display: block;
+    }
+
+    .hair-bawah{
+        margin: -2px 0 5px 0;
+    }
+
+    .navbar-inner{
+        height: auto;
+    }
+
+  .nav-collapse ul.nav.pull-left{
+    float: none;
+    margin: 50px 0px 10px;
+  }
+
+  .nav-collapse ul.nav.pull-right{
+    float: none;
+    margin: 0px 0px 10px;
+  }
+
+  .nav-collapse ul.nav{
+    margin-top: 50px;
+  }
+
+  .dropdown-menu li > input.btn{
+      margin: 0px 3% 20px auto;
+    }
+
+  .navbar .nav {
+    margin: 18px auto 30px 0;
+  }
+
+
+  .navbar .nav > li,.navbar .nav > li > a:hover,
+  .navbar .nav > .active > a,
+  .navbar .nav > .active > li:hover{
+    border-radius: 5px 5px 5px 5px;
+    line-height: 10px;
+    margin:10px 1px 20px 0px;
+    width: auto;
+    text-align: left;
+    }
+
+  #login .dropdown-toggle:hover,
+  #login .dropdown-toggle:focus,
+  .navbar .nav li.dropdown.open > .dropdown-toggle,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  li input{
+    width: 95%;
+    padding-right: 10px;
+  }
+
+  #login .dropdown-menu li > label{
+    color: white;
+  }
+
+  a#forgot,
+  .dropdown-menu li > a#forgot:hover,
+  .dropdown-menu li > a#forgot:focus{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .navbar .nav li.dropdown:hover > .dropdown-toggle .caret{
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+
+  .navbar .nav > li > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    height: 10px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+
+  .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a {
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 480px) and (min-width:320px){
+    .container{
+        width: 100%;
+    }
+    
+    .hero-unit{
+        padding: 10px;
+    }
+    
+    #appendedPrependedInput{
+        width:120px;
+    }
+
+    .logo{
+        position: absolute;
+        margin-left: 32%;
+        margin-right: auto;
+    }
+
+    .hair-atas{
+        margin-top: 55px;
+        display: block;
+    }
+
+    .hair-bawah{
+        margin: -2px 0 5px 0;
+    }
+
+    .navbar-inner{
+        height: auto;
+    }
+
+  .nav-collapse ul.nav.pull-left{
+    float: none;
+    margin: 50px 0px 10px;
+  }
+
+  .nav-collapse ul.nav.pull-right{
+    float: none;
+    margin: 0px 0px 10px;
+  }
+
+  .nav-collapse ul.nav{
+    margin-top: 50px;
+  }
+
+  .dropdown-menu li > input.btn{
+      margin: 0px 3% 20px auto;
+    }
+
+  .navbar .nav {
+    margin: 18px auto 30px 0;
+  }
+
+
+  .navbar .nav > li,.navbar .nav > li > a:hover, .navbar .nav > .active > a, .navbar .nav > .active > li:hover{
+    border-radius: 5px 5px 5px 5px;
+    line-height: 10px;
+    margin:10px 1px 20px 0px;
+    width: auto;
+    text-align: left;
+  }
+
+  .navbar .nav > li > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    height: 10px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    font-weight: normal;
+  }
+
+  #login .dropdown-toggle:hover,
+  #login .dropdown-toggle:focus,
+  .navbar .nav li.dropdown.open > .dropdown-toggle,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  li input{
+    width: 95%;
+    padding-right: 10px;
+  }
+
+  #login .dropdown-menu li > label{
+    color: white;
+  }
+
+  a#forgot,
+  .dropdown-menu li > a#forgot:hover,
+  .dropdown-menu li > a#forgot:focus{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .navbar .nav li.dropdown:hover > .dropdown-toggle .caret{
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+}
+
+@media (max-width:320px){
+    .container{
+        width: 100%;
+    }
+    
+    .hero-unit{
+        padding: 5px;
+    }
+    
+    .hero-unit h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .input-apend input.btn{
+        
+    }
+    
+    #appendedPrependedInput{
+        width:40px;
+    }
+
+    .logo{
+        position: absolute;
+        margin-left: 25%;
+        margin-right: auto;
+    }
+
+    .hair-atas{
+        margin-top: 55px;
+        display: block;
+    }
+
+    .hair-bawah{
+        margin: -2px 0 5px 0;
+    }
+
+    .navbar-inner{
+        height: auto;
+    }
+
+  .nav-collapse ul.nav.pull-left{
+    float: none;
+    margin: 50px 0px 10px;
+  }
+
+  .nav-collapse ul.nav.pull-right{
+    float: none;
+    margin: 0px 0px 10px;
+  }
+
+  .nav-collapse ul.nav{
+    margin-top: 50px;
+  }
+
+  .navbar .nav {
+    margin: 18px auto 30px 0;
+  }
+
+  .dropdown-menu li > input.btn{
+      margin: 0px 3% 20px auto;
+    }
+
+
+  .navbar .nav > li,.navbar .nav > li > a:hover, .navbar .nav > .active > a, .navbar .nav > .active > li:hover{
+    border-radius: 5px 5px 5px 5px;
+    line-height: 10px;
+    margin:10px 1px 20px 0px;
+    width: auto;
+    text-align: left;
+  }
+
+  .navbar .nav > li > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    height: 10px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    font-weight: normal;
+  }
+
+  .nav-collapse .dropdown-menu{
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  #login .dropdown-toggle:hover,
+  #login .dropdown-toggle:focus,
+  .navbar .nav li.dropdown.open > .dropdown-toggle,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  li input{
+    width: 90%;
+  }
+
+  #login .dropdown-menu li > label{
+    color: white;
+  }
+
+  a#forgot,
+  .dropdown-menu li > a#forgot:hover,
+  .dropdown-menu li > a#forgot:focus{
+    color: white;
+    text-shadow: 0px 1px 0px white;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .navbar .nav li.dropdown:hover > .dropdown-toggle .caret{
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+
+}
+ /* for demo purposes (fixed top navbar placement in the fiddle. Ok to remove */
+ 
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0;
+    }
+}
